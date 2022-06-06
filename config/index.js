@@ -1,3 +1,4 @@
+const path = require('path')
 const config = {
   projectName: 'my-first-taro-app',
   date: '2022-6-6',
@@ -12,6 +13,19 @@ const config = {
   plugins: [],
   defineConstants: {
   },
+  copy: {
+    patterns: [
+    ],
+    options: {
+    }
+  },
+  sass: {
+      projectDirectory: path.resolve(__dirname, '..'),
+      resource: [
+          'src/app.scss',
+      ],
+    data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`,
+	},
   copy: {
     patterns: [
     ],
