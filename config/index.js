@@ -1,16 +1,16 @@
-const path = require('path')
 const config = {
-  projectName: 'my-first-taro-app',
-  date: '2022-6-6',
-  designWidth: 750,
+  projectName: 'myApp2',
+  date: '2022-6-7',
+  designWidth: 375,
   deviceRatio: {
     640: 2.34 / 2,
     750: 1,
-    828: 1.81 / 2
+    828: 1.81 / 2,
+    375: 2 / 1
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-    plugins: ['@dcasia/mini-program-tailwind-webpack-plugin/dist/taro'],
+    plugins: ['@tarojs/plugin-html', '@dcasia/mini-program-tailwind-webpack-plugin/dist/taro'],
   defineConstants: {
   },
   copy: {
@@ -19,26 +19,16 @@ const config = {
     options: {
     }
   },
-  sass: {
-      projectDirectory: path.resolve(__dirname, '..'),
-      resource: [
-          'src/app.scss',
-      ],
-    data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`,
-	},
-  copy: {
-    patterns: [
-    ],
-    options: {
-    }
-  },
   framework: 'vue3',
+  sass:{
+    data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`
+  },
   mini: {
     postcss: {
       pxtransform: {
         enable: true,
         config: {
-
+          selectorBlackList: ['nut-']
         }
       },
       url: {
@@ -59,6 +49,7 @@ const config = {
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
+    esnextModules: ['nutui-taro'],
     postcss: {
       autoprefixer: {
         enable: true,
