@@ -13,7 +13,7 @@ import './app.scss'
 
 import { Button } from "@nutui/nutui";
 // import "@nutui/nutui/dist/style.css";
-import './tailwind.css'
+
 
 const App = createApp({
   onShow (options) {},
