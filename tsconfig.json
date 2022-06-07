@@ -22,6 +22,6 @@
       "node_modules/@types"
     ]
   },
-  "include": ["./src", "global.d.ts"],
+  "include": ["./src", "global.d.ts", "windi.config.js"],
   "compileOnSave": false
 }

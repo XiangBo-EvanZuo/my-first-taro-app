@@ -1,3 +1,12 @@
+/*
+ * @Author: Evan Zuo v_wangxiangbo01@baidu.com
+ * @Date: 2022-06-07 16:45:13
+ * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
+ * @LastEditTime: 2022-06-07 17:55:15
+ * @FilePath: /my-first-taro-app/config/index.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
+const path = require('path')
 const config = {
   projectName: 'myApp2',
   date: '2022-6-7',
@@ -20,9 +29,19 @@ const config = {
     }
   },
   framework: 'vue3',
-  sass:{
-    data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`
-  },
+    sass: {
+        projectDirectory: path.resolve(__dirname, '..'),
+        resource: [
+            'src/app.scss',
+        ],
+        data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`,
+    },
+    copy: {
+        patterns: [
+        ],
+        options: {
+        }
+    },
   mini: {
     postcss: {
       pxtransform: {
