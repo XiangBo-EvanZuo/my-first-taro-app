@@ -1,5 +1,5 @@
 {
-  "name": "myApp2",
+  "name": "my-first-taro-app",
   "version": "1.0.0",
   "private": true,
   "description": "sdf",
@@ -41,7 +41,7 @@
     "@tarojs/plugin-html": "3.4.11",
     "@tarojs/runtime": "3.4.11",
     "@tarojs/taro": "3.4.11",
-    "vue": "^3.0.0"
+    "vue": "^3.2.37"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
