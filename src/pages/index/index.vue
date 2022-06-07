@@ -2,7 +2,7 @@
  * @Author: Evan Zuo v_wangxiangbo01@baidu.com
  * @Date: 2022-06-06 14:59:00
  * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
- * @LastEditTime: 2022-06-07 15:10:35
+ * @LastEditTime: 2022-06-07 15:54:02
  * @FilePath: /my-first-taro-app/src/pages/index/index.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -19,7 +19,7 @@
     <view :class="{'dark': isDarkMode}">
         <view  class="bg-white dark:bg-black">123</view>
     </view>
-    <nut-switch v-model="isDarkMode" @tap="tapSwitch">12</nut-switch>
+    <nut-switch v-model="isDarkMode" @click="clickItem2" @tap="tapSwitch">12</nut-switch>
   </view>
 </template>
 
@@ -39,6 +39,10 @@ import { ref } from 'vue';
     const tapSwitch = (e, other) => {
         console.log(e, other)
         isDarkMode.value = !isDarkMode.value
+    }
+
+    const clickItem2 = (e, other) => {
+        console.log(e, other)
     }
 
 </script>

@@ -2,7 +2,7 @@
  * @Author: Evan Zuo v_wangxiangbo01@baidu.com
  * @Date: 2022-06-06 14:59:00
  * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
- * @LastEditTime: 2022-06-07 15:20:53
+ * @LastEditTime: 2022-06-07 15:39:09
  * @FilePath: /my-first-taro-app/src/app.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -11,7 +11,7 @@ import store from './store'
 
 import './app.scss'
 
-import { Button, Switch, Icon } from "@nutui/nutui";
+import { Button, Switch, Icon } from "@nutui/nutui-taro";
 // import "@nutui/nutui/dist/style.css";
 import 'windi.css';
 
