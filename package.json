@@ -17,7 +17,7 @@
     "build:rn": "taro build --type rn",
     "build:qq": "taro build --type qq",
     "build:quickapp": "taro build --type quickapp",
-    "dev:weapp": "npm run build:weapp -- --watch",
+    "dev:weapp": "postcss ./src/tailwind.src.css -o ./src/tailwind.css && npm run build:weapp -- --watch",
     "dev:swan": "npm run build:swan -- --watch",
     "dev:alipay": "npm run build:alipay -- --watch",
     "dev:tt": "npm run build:tt -- --watch",
@@ -58,6 +58,10 @@
     "eslint-plugin-vue": "^7.0.0",
     "stylelint": "9.3.0",
     "typescript": "^3.7.0",
-    "vue-loader": "^16.0.0-beta.8"
+    "vue-loader": "^16.0.0-beta.8",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.4",
+    "taro-tailwind": "^1.0.2"
   }
 }
