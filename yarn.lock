@@ -10,6 +10,11 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
+"@antfu/utils@^0.5.1":
+  version "0.5.2"
+  resolved "http://registry.npm.baidu-int.com/@antfu%2futils/-/utils-0.5.2.tgz#8c2d931ff927be0ebe740169874a3d4004ab414b"
+  integrity sha512-CQkeV+oJxUazwjlHD0/3ZD08QWKuGQkhnrKo3e6ly5pd48VUpXbb77q0xMU4+vc2CkJnDS02Eq/M9ugyX20XZA==
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.16.7":
   version "7.16.7"
   resolved "http://registry.npm.baidu-int.com/@babel%2fcode-frame/-/code-frame-7.16.7.tgz#44416b6bd7624b998f5b1af5d470856c40138789"
@@ -22,7 +27,7 @@
   resolved "http://registry.npm.baidu-int.com/@babel%2fcompat-data/-/compat-data-7.17.10.tgz#711dc726a492dfc8be8220028b1b92482362baab"
   integrity sha512-GZt/TCsG70Ms19gfZO1tM4CVnXsPgEPBCpJu+Qz3L0LUDsY5nZqFZglIoPC1kIYOtNBZlrnFT+klg12vFGZXrw==
 
-"@babel/core@^7.0.0", "@babel/core@^7.11.1", "@babel/core@^7.8.0":
+"@babel/core@^7.0.0", "@babel/core@^7.11.1", "@babel/core@^7.17.5", "@babel/core@^7.8.0":
   version "7.18.2"
   resolved "http://registry.npm.baidu-int.com/@babel%2fcore/-/core-7.18.2.tgz#87b2fcd7cce9becaa7f5acebdc4f09f3dd19d876"
   integrity sha512-A8pri1YJiC5UnkdrWcmfZTJTV85b4UXTAfImGmCfYmax4TR9Cw8sDS0MOk++Gp2mE/BefVJ5nwy5yzqNJbP/DQ==
@@ -1089,6 +1094,17 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
+"@dcasia/mini-program-tailwind-webpack-plugin@^1.4.1":
+  version "1.4.1"
+  resolved "http://registry.npm.baidu-int.com/@dcasia%2fmini-program-tailwind-webpack-plugin/-/mini-program-tailwind-webpack-plugin-1.4.1.tgz#c2e6ea35fff3b2ad461f208fae0dc8c2587da108"
+  integrity sha512-MOGs4V3XaDECfluREl20xpjF1cdMxMgixsO9ny9tp4pzficqfW3W9KdVFgNGDsFxt9f5KOtAvJlQ1aADlyJrog==
+  dependencies:
+    "@babel/core" "^7.17.5"
+    "@vivaxy/wxml" "^2.1.0"
+    postcss "^8.4.7"
+    webpack-sources "^1.4.3"
+    windicss-webpack-plugin "^1.7.2"
+
 "@gar/promisify@^1.0.1":
   version "1.1.3"
   resolved "http://registry.npm.baidu-int.com/@gar%2fpromisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
@@ -1711,6 +1727,11 @@
     "@typescript-eslint/types" "4.33.0"
     eslint-visitor-keys "^2.0.0"
 
+"@vivaxy/wxml@^2.1.0":
+  version "2.1.0"
+  resolved "http://registry.npm.baidu-int.com/@vivaxy%2fwxml/-/wxml-2.1.0.tgz#85d1a36e4f304b11cbdd283a70062e32ab61f318"
+  integrity sha512-xqnfAB58tl5SPyfkQjrn7D7nuvq7XV9um7QUsjCrvA4X6aZBxcau9sAM47LsQTOpJIVPzjaKIMvq3ul07yZlOA==
+
 "@vue/compiler-core@3.2.36":
   version "3.2.36"
   resolved "http://registry.npm.baidu-int.com/@vue%2fcompiler-core/-/compiler-core-3.2.36.tgz#2fa44595308c95610602df54dcb69063ba2c8383"
@@ -1950,6 +1971,28 @@
     "@webassemblyjs/ast" "1.9.0"
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
+
+"@windicss/config@1.8.4":
+  version "1.8.4"
+  resolved "http://registry.npm.baidu-int.com/@windicss%2fconfig/-/config-1.8.4.tgz#090c7f48cb86b6cba1bd97742a2f012852026d3c"
+  integrity sha512-i4fFGFfZoRess6WMkauykHC3PFd9xKYVx7lSuLfMK7sgo6x3+l4dY42GbsWMHyLqH1sTMfyt1LgfXSIKYJozSA==
+  dependencies:
+    debug "^4.3.4"
+    jiti "^1.13.0"
+    windicss "^3.5.1"
+
+"@windicss/plugin-utils@^1.8.4":
+  version "1.8.4"
+  resolved "http://registry.npm.baidu-int.com/@windicss%2fplugin-utils/-/plugin-utils-1.8.4.tgz#fba74b6eb29276e24b9d09931bc22808fd7230d7"
+  integrity sha512-DqJVwAfzlgd8nYSNlmhXOey32pI8UwH7QiOWdFS/AR2O/q9oLDGHDn97Its/kZdfoyhi8ylwZNP2Pk0H7cihhQ==
+  dependencies:
+    "@antfu/utils" "^0.5.1"
+    "@windicss/config" "1.8.4"
+    debug "^4.3.4"
+    fast-glob "^3.2.11"
+    magic-string "^0.26.1"
+    micromatch "^4.0.5"
+    windicss "^3.5.1"
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
@@ -3706,7 +3749,7 @@ debug@3.1.0, debug@~3.1.0:
   dependencies:
     ms "2.0.0"
 
-debug@4, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
+debug@4, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.4:
   version "4.3.4"
   resolved "http://registry.npm.baidu-int.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
@@ -4593,7 +4636,7 @@ fast-glob@^2.0.2:
     merge2 "^1.2.3"
     micromatch "^3.1.10"
 
-fast-glob@^3.2.9:
+fast-glob@^3.2.11, fast-glob@^3.2.9:
   version "3.2.11"
   resolved "http://registry.npm.baidu-int.com/fast-glob/-/fast-glob-3.2.11.tgz#a1172ad95ceb8a16e20caa5c5e56480e5129c1d9"
   integrity sha512-xrO3+1bxSo3ZVHAnqzyuewYT6aMFHRAd4Kcs92MAonjwQZLsK9d0SF1IyQ3k5PoirxTW0Oe/RqFgMQ6TcNE5Ew==
@@ -4979,6 +5022,11 @@ get-intrinsic@^1.0.2, get-intrinsic@^1.1.0, get-intrinsic@^1.1.1:
     function-bind "^1.1.1"
     has "^1.0.3"
     has-symbols "^1.0.1"
+
+get-port@^6.1.2:
+  version "6.1.2"
+  resolved "http://registry.npm.baidu-int.com/get-port/-/get-port-6.1.2.tgz#c1228abb67ba0e17fb346da33b15187833b9c08a"
+  integrity sha512-BrGGraKm2uPqurfGVj/z97/zv8dPleC6x9JBNRTrDNtCkkRF4rPwrQXFgL7+I+q8QSdU4ntLQX2D7KIxSy8nGw==
 
 get-stdin@^6.0.0:
   version "6.0.0"
@@ -6160,6 +6208,11 @@ jest-worker@^26.2.1:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
+jiti@^1.13.0:
+  version "1.13.0"
+  resolved "http://registry.npm.baidu-int.com/jiti/-/jiti-1.13.0.tgz#3cdfc4e651ca0cca4c62ed5e47747b5841d41a8e"
+  integrity sha512-/n9mNxZj/HDSrincJ6RP+L+yXbpnB8FybySBa+IjIaoH9FIxBbrbRT5XUbe8R7zuVM2AQqNMNDDqz0bzx3znOQ==
+
 js-base64@^2.1.9:
   version "2.6.4"
   resolved "http://registry.npm.baidu-int.com/js-base64/-/js-base64-2.6.4.tgz#f4e686c5de1ea1f867dbcad3d46d969428df98c4"
@@ -6565,6 +6618,13 @@ magic-string@^0.25.7:
   dependencies:
     sourcemap-codec "^1.4.8"
 
+magic-string@^0.26.1:
+  version "0.26.2"
+  resolved "http://registry.npm.baidu-int.com/magic-string/-/magic-string-0.26.2.tgz#5331700e4158cd6befda738bb6b0c7b93c0d4432"
+  integrity sha512-NzzlXpclt5zAbmo6h6jNc8zl2gNRGHvmsZW4IvZhTC4W7k4OlLP+S5YLussa/r3ixNT66KOQfNORlXHSOy/X4A==
+  dependencies:
+    sourcemap-codec "^1.4.8"
+
 make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"
   resolved "http://registry.npm.baidu-int.com/make-dir/-/make-dir-2.1.0.tgz#5f0310e18b8be898cc07009295a30ae41e91e6f5"
@@ -6796,7 +6856,7 @@ micromatch@^3.1.10, micromatch@^3.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
-micromatch@^4.0.2, micromatch@^4.0.4:
+micromatch@^4.0.2, micromatch@^4.0.4, micromatch@^4.0.5:
   version "4.0.5"
   resolved "http://registry.npm.baidu-int.com/micromatch/-/micromatch-4.0.5.tgz#bc8999a7cbbf77cdc89f132f6e467051b49090c6"
   integrity sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==
@@ -7697,6 +7757,11 @@ path-type@^4.0.0:
   resolved "http://registry.npm.baidu-int.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+pathe@^0.2.0:
+  version "0.2.0"
+  resolved "http://registry.npm.baidu-int.com/pathe/-/pathe-0.2.0.tgz#30fd7bbe0a0d91f0e60bae621f5d19e9e225c339"
+  integrity sha512-sTitTPYnn23esFR3RlqYBWn4c45WGeLcsKzQiUpXJAyfcWkolvlYpV8FLo7JishK946oQwMFUCHXQ9AjGPKExw==
+
 pbkdf2@^3.0.3:
   version "3.1.2"
   resolved "http://registry.npm.baidu-int.com/pbkdf2/-/pbkdf2-3.1.2.tgz#dd822aa0887580e52f1a039dc3eda108efae3075"
@@ -8025,7 +8090,7 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.2, postcss@^7.0.23
     picocolors "^0.2.1"
     source-map "^0.6.1"
 
-postcss@^8.1.10:
+postcss@^8.1.10, postcss@^8.4.7:
   version "8.4.14"
   resolved "http://registry.npm.baidu-int.com/postcss/-/postcss-8.4.14.tgz#ee9274d5622b4858c1007a74d76e42e56fd21caf"
   integrity sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==
@@ -10492,6 +10557,11 @@ webpack-sources@^1.0.1, webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
+webpack-virtual-modules@^0.4.3:
+  version "0.4.3"
+  resolved "http://registry.npm.baidu-int.com/webpack-virtual-modules/-/webpack-virtual-modules-0.4.3.tgz#cd597c6d51d5a5ecb473eea1983a58fa8a17ded9"
+  integrity sha512-5NUqC2JquIL2pBAAo/VfBP6KuGkHIZQXW/lNKupLPfhViwh8wNsu0BObtl09yuKZszeEUfbXz8xhrHvSG16Nqw==
+
 webpack@4.46.0:
   version "4.46.0"
   resolved "http://registry.npm.baidu-int.com/webpack/-/webpack-4.46.0.tgz#bf9b4404ea20a073605e0a011d188d77cb6ad542"
@@ -10607,6 +10677,25 @@ which@^2.0.1:
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
+
+windicss-webpack-plugin@^1.7.2:
+  version "1.7.3"
+  resolved "http://registry.npm.baidu-int.com/windicss-webpack-plugin/-/windicss-webpack-plugin-1.7.3.tgz#307c3b7363a902f97326442c9a14ecf1c04fe800"
+  integrity sha512-vESTMEUqzNlvOmnOCCxeqDkj1q2u69FfKMQHyTF9Y9tLJbWttEHgt+qSJZ3cYndUHRxbz06INanEyL08dQr79A==
+  dependencies:
+    "@windicss/plugin-utils" "^1.8.4"
+    debug "^4.3.4"
+    get-port "^6.1.2"
+    loader-utils "^2.0.0"
+    lodash "^4.17.21"
+    pathe "^0.2.0"
+    webpack-virtual-modules "^0.4.3"
+    windicss "^3.5.4"
+
+windicss@^3.5.1, windicss@^3.5.4:
+  version "3.5.4"
+  resolved "http://registry.npm.baidu-int.com/windicss/-/windicss-3.5.4.tgz#e55b9e1803d63c2256ddb94e60af8f582489b402"
+  integrity sha512-x2Iu0a69dtNiKHMkR886lx0WKbZI5GqvXyvGBCJ2VA6rcjKYjnzCA/Ljd6hNQBfqlkSum8J+qAVcCfLzQFI4rQ==
 
 word-wrap@~1.2.3:
   version "1.2.3"
