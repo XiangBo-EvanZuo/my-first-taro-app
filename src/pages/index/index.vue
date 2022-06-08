@@ -2,14 +2,14 @@
  * @Author: Evan Zuo v_wangxiangbo01@baidu.com
  * @Date: 2022-06-07 16:45:13
  * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
- * @LastEditTime: 2022-06-07 18:30:49
+ * @LastEditTime: 2022-06-07 18:37:46
  * @FilePath: /myApp2/src/pages/index/index.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 <template>
   <view class="index">
-    <nut-toast :msg="msg" v-model:visible="show" :type="type" :cover="cover" />
-    <nut-button @tap="clickItem" type="primary">主要按钮</nut-button>
+    <nut-toast :msg="msg" v-model:visible="show" />
+    <nut-button type="primary">主要按钮</nut-button>
     <nut-button type="info">信息按钮</nut-button>
     <nut-button type="default">默认按钮</nut-button>
     <nut-button type="danger">危险按钮</nut-button>
