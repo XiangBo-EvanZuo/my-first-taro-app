@@ -11,5 +11,5 @@
 - pina
 - @prequest/miniprogram
 - pina - persist
-
+- 组件代替switch-tab
 # todos
