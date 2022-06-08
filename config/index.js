@@ -2,7 +2,7 @@
  * @Author: Evan Zuo v_wangxiangbo01@baidu.com
  * @Date: 2022-06-07 16:45:13
  * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
- * @LastEditTime: 2022-06-07 17:55:15
+ * @LastEditTime: 2022-06-08 13:51:42
  * @FilePath: /my-first-taro-app/config/index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -19,7 +19,11 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-    plugins: ['@tarojs/plugin-html', '@dcasia/mini-program-tailwind-webpack-plugin/dist/taro'],
+    plugins: [
+        '@tarojs/plugin-html',
+        '@dcasia/mini-program-tailwind-webpack-plugin/dist/taro',
+        'taro-plugin-pinia',
+    ],
   defineConstants: {
   },
   copy: {

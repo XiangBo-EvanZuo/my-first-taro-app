@@ -1334,6 +1334,60 @@
   resolved "http://registry.npm.baidu-int.com/@prefresh%2fbabel-plugin/-/babel-plugin-0.4.3.tgz#175ecf6f7a038d06a83d1806503283c98c7d9865"
   integrity sha512-fYAWbU1WDSLn108kKY4eDaaeUcnszFqXjgaGKYXNZ5NLulpRTpsrY+Sbfo9q8LDpWrBpqIgzjrwNnvglWI1xNQ==
 
+"@prequest/core@^1.4.1":
+  version "1.4.1"
+  resolved "http://registry.npm.baidu-int.com/@prequest%2fcore/-/core-1.4.1.tgz#004d9fe91e4534579af03ea6062c82150997e7d0"
+  integrity sha512-bxX2Zwo9g/4ODqcrq2sOSptLUtLd0fU81YqRs3kPIF36Vby0WpfRadVvqvAiM3YCXcagubr8wcpG4fStWGTszg==
+  dependencies:
+    "@prequest/types" "^1.4.1"
+    "@xdoer/x" "^1.0.0"
+
+"@prequest/error-retry@^1.4.1":
+  version "1.4.1"
+  resolved "http://registry.npm.baidu-int.com/@prequest%2ferror-retry/-/error-retry-1.4.1.tgz#43b04ab6ae6fd3b90347fc553d86f0dde9f7b5a4"
+  integrity sha512-5+ZPMPMhMAJKwGXtLObaL5TklFcPKTBGXn9sGgEMVfwGxtNONnuLDB5Z+1KngcSWQxr55Zf5w5xYeQ8a0va0sQ==
+  dependencies:
+    "@prequest/types" "^1.4.1"
+    "@xdoer/x" "^1.0.0"
+
+"@prequest/helper@^1.4.1":
+  version "1.4.1"
+  resolved "http://registry.npm.baidu-int.com/@prequest%2fhelper/-/helper-1.4.1.tgz#1bee83d1f476eac23c82b2afabfdfe5c090fab8f"
+  integrity sha512-bdVgPfNfedYfYz2jkeRqCl5D4gqcYzAkkirchA1s6pvMZmE60MoGRbKO59KxfSD/QGcziZY1X0LzT4y16KGQCw==
+  dependencies:
+    "@prequest/types" "^1.4.1"
+    "@xdoer/x" "^1.0.0"
+    qs "^6.10.1"
+
+"@prequest/lock@^1.4.1":
+  version "1.4.1"
+  resolved "http://registry.npm.baidu-int.com/@prequest%2flock/-/lock-1.4.1.tgz#9ef6db69089768872454314fd2b9baef2b61d621"
+  integrity sha512-Val+ZXkvMw6AI+1p76mWSPMJCfe1nPze6H23fQMNzl/myZWJFgxjjgS0nvBSBrE3EMbV/nZrCGcGZLwQcRYEgA==
+  dependencies:
+    "@xdoer/x" "^1.0.0"
+
+"@prequest/miniprogram@^1.4.1":
+  version "1.4.1"
+  resolved "http://registry.npm.baidu-int.com/@prequest%2fminiprogram/-/miniprogram-1.4.1.tgz#170db8790000eb297c7ca1108b8ed68041d87f63"
+  integrity sha512-oa1diMatatRvAeFAhJ4EvPPmKiRmG6RTP8jlNBgNZxEIGys4EhGDgoobb63HmEKvbnbr04/wCNXVUIULOZKe8g==
+  dependencies:
+    "@prequest/core" "^1.4.1"
+    "@prequest/helper" "^1.4.1"
+    "@prequest/types" "^1.4.1"
+
+"@prequest/timeout@^1.4.1":
+  version "1.4.1"
+  resolved "http://registry.npm.baidu-int.com/@prequest%2ftimeout/-/timeout-1.4.1.tgz#b145e02f7275bf65ec581a2a66ca29180c329b84"
+  integrity sha512-92EDEoG/xEI/CkT6NfGjYLhHOx65y4XJGrcjU6JNcLRCqlSWbE7j11IdzeudIP8y+wcE/t/ZLo43IcXGPg1rMw==
+  dependencies:
+    "@prequest/helper" "^1.4.1"
+    "@prequest/types" "^1.4.1"
+
+"@prequest/types@^1.4.1":
+  version "1.4.1"
+  resolved "http://registry.npm.baidu-int.com/@prequest%2ftypes/-/types-1.4.1.tgz#9c6acaf2bee75a9e3b7383bebeef99bd4598f6e5"
+  integrity sha512-6+YR0qQUCBsMFLjxE7rH/UtlVeLUDos82R0hFn2otVmDOeRDZR6ryLk1LHdqdudSusqpfED0tvbaonSLo7yP1g==
+
 "@sideway/address@^4.1.3":
   version "4.1.4"
   resolved "http://registry.npm.baidu-int.com/@sideway%2faddress/-/address-4.1.4.tgz#03dccebc6ea47fdc226f7d3d1ad512955d4783f0"
@@ -2123,7 +2177,7 @@
     "@vue/compiler-dom" "3.2.37"
     "@vue/shared" "3.2.37"
 
-"@vue/devtools-api@^6.0.0":
+"@vue/devtools-api@^6.0.0", "@vue/devtools-api@^6.1.4":
   version "6.1.4"
   resolved "http://registry.npm.baidu-int.com/@vue%2fdevtools-api/-/devtools-api-6.1.4.tgz#b4aec2f4b4599e11ba774a50c67fa378c9824e53"
   integrity sha512-IiA0SvDrJEgXvVxjNkHPFfDx6SXw0b/TUkqMcDZWNg9fnCAHbTpoo59YfJ9QLFkwa3raau5vSlRVzMSLDnfdtQ==
@@ -2342,6 +2396,11 @@
     magic-string "^0.26.1"
     micromatch "^4.0.5"
     windicss "^3.5.1"
+
+"@xdoer/x@^1.0.0":
+  version "1.0.0"
+  resolved "http://registry.npm.baidu-int.com/@xdoer%2fx/-/x-1.0.0.tgz#ec37f53ec7d19f167239c85e382d996db40208b0"
+  integrity sha512-gEahukGOIxKJFwcbP8/o0tkXBZOnZRBw9n90kcNELAgXX3tbwPSf5FJBrOltom/n2lAaZTKnpnqjrh3F/+qrJA==
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
@@ -10058,6 +10117,14 @@ pify@^4.0.1:
   resolved "http://registry.npm.baidu-int.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
+pinia@^2.0.14:
+  version "2.0.14"
+  resolved "http://registry.npm.baidu-int.com/pinia/-/pinia-2.0.14.tgz#0837898c20291ebac982bbfca95c8d3c6099925f"
+  integrity sha512-0nPuZR4TetT/WcLN+feMSjWJku3SQU7dBbXC6uw+R6FLQJCsg+/0pzXyD82T1FmAYe0lsx+jnEDQ1BLgkRKlxA==
+  dependencies:
+    "@vue/devtools-api" "^6.1.4"
+    vue-demi "*"
+
 pinkie-promise@^2.0.0:
   version "2.0.1"
   resolved "http://registry.npm.baidu-int.com/pinkie-promise/-/pinkie-promise-2.0.1.tgz#2135d6dfa7a358c069ac9b178776288228450ffa"
@@ -10529,6 +10596,13 @@ qs@6.10.3:
   version "6.10.3"
   resolved "http://registry.npm.baidu-int.com/qs/-/qs-6.10.3.tgz#d6cde1b2ffca87b5aa57889816c5f81535e22e8e"
   integrity sha512-wr7M2E0OFRfIfJZjKGieI8lBKb7fRCH4Fv5KNPEs7gJ8jadvotdsS08PzOKR7opXhZ/Xkjtt3WF9g38drmyRqQ==
+  dependencies:
+    side-channel "^1.0.4"
+
+qs@^6.10.1:
+  version "6.10.5"
+  resolved "http://registry.npm.baidu-int.com/qs/-/qs-6.10.5.tgz#974715920a80ff6a262264acd2c7e6c2a53282b4"
+  integrity sha512-O5RlPh0VFtR78y79rgcgKK4wbAI0C5zGVLztOIdpWX6ep368q5Hv6XRxDvXuZ9q3C6v+e3n8UfZZJw7IIG27eQ==
   dependencies:
     side-channel "^1.0.4"
 
@@ -12313,6 +12387,11 @@ taro-css-to-react-native@3.4.11:
     css-mediaquery "^0.1.2"
     postcss-value-parser "^3.3.0"
 
+taro-plugin-pinia@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.baidu-int.com/taro-plugin-pinia/-/taro-plugin-pinia-1.0.0.tgz#7dee620cc84303a4b4c2df50e649bae72c3b6ac0"
+  integrity sha512-Ip2LTRh7NGsFyEzkZWvU115xDqV3D8cRRbqqw0JKTvzHFBzpwycmrUVQQxV61AMg0r2RJm3mcEbQ997j7xNjtg==
+
 term-size@^1.2.0:
   version "1.2.0"
   resolved "http://registry.npm.baidu-int.com/term-size/-/term-size-1.2.0.tgz#458b83887f288fc56d6fffbfad262e26638efa69"
@@ -13061,6 +13140,11 @@ vscode@^1.1.37:
     semver "^5.4.1"
     source-map-support "^0.5.0"
     vscode-test "^0.4.1"
+
+vue-demi@*:
+  version "0.13.1"
+  resolved "http://registry.npm.baidu-int.com/vue-demi/-/vue-demi-0.13.1.tgz#7604904c88be338418a10abbc94d5b8caa14cb8c"
+  integrity sha512-xmkJ56koG3ptpLnpgmIzk9/4nFf4CqduSJbUM0OdPoU87NwRuZ6x49OLhjSa/fC15fV+5CbEnrxU4oyE022svg==
 
 vue-eslint-parser@^8.0.1:
   version "8.3.0"

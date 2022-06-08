@@ -20,7 +20,10 @@
     "resolveJsonModule": true,
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    "paths": {
+      "@common/*": ["src/common/*"],
+    }
   },
   "include": ["./src", "global.d.ts", "windi.config.js"],
   "compileOnSave": false

@@ -36,11 +36,19 @@
   "dependencies": {
     "@babel/runtime": "^7.7.7",
     "@nutui/nutui-taro": "^3.1.8",
+    "@prequest/error-retry": "^1.4.1",
+    "@prequest/lock": "^1.4.1",
+    "@prequest/miniprogram": "^1.4.1",
+    "@prequest/timeout": "^1.4.1",
+    "@prequest/types": "^1.4.1",
     "@tarojs/components": "3.4.11",
     "@tarojs/plugin-framework-vue3": "3.4.11",
     "@tarojs/plugin-html": "3.4.11",
     "@tarojs/runtime": "3.4.11",
     "@tarojs/taro": "3.4.11",
+    "pinia": "^2.0.14",
+    "query-string": "^7.1.1",
+    "taro-plugin-pinia": "^1.0.0",
     "vue": "^3.2.37"
   },
   "devDependencies": {
