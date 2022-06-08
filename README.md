@@ -7,6 +7,9 @@
   - NutUI
 - tailwindcss
 - custom_theme
+- Vue3.2xx
+- pina
+- @prequest/miniprogram
+- pina - persist
 
 # todos
-- Vue3.2xxx
