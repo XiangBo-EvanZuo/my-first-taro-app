@@ -2,7 +2,7 @@
  * @Author: Evan Zuo v_wangxiangbo01@baidu.com
  * @Date: 2022-06-07 16:45:13
  * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
- * @LastEditTime: 2022-06-09 11:18:07
+ * @LastEditTime: 2022-06-09 11:54:49
  * @FilePath: /myApp2/src/pages/index/index.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -17,10 +17,10 @@
     <nut-button class="flex" @click="handleClick" type="success"
       >成功按钮</nut-button
     >
-    <view :class="{ 'dark': isDarkMode }">
+    <view :class="{ 'dark': store.isDarkMode }">
       <view class="bg-white dark:bg-black">123</view>
     </view>
-    <nut-switch @change="switchChange" v-model="isDarkMode">12</nut-switch>
+    <nut-switch @change="switchChange" v-model="store.isDarkMode">12</nut-switch>
     <TabBar></TabBar>
   </view>
 </template>
@@ -32,7 +32,6 @@ import TabBar from './../../components/TabBar';
 
 import { ref } from "vue";
 const store = useCounterStore()
-const isDarkMode = ref(store.isDarkMode);
 
 const msg = ref("");
 const show = ref(false);
@@ -52,11 +51,11 @@ const login = async () => {
 };
 
 defineExpose({
-  isDarkMode,
   handleClick,
   login,
   switchChange,
   TabBar,
+  store,
 });
 
 </script>
