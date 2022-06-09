@@ -2,7 +2,7 @@
  * @Author: Evan Zuo v_wangxiangbo01@baidu.com
  * @Date: 2022-06-07 16:45:13
  * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
- * @LastEditTime: 2022-06-08 17:33:01
+ * @LastEditTime: 2022-06-09 11:33:15
  * @FilePath: /myApp2/src/pages/index/index.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -19,7 +19,7 @@
 <script setup>
 import { useCounterStore } from './../../store';
 import { ref, onBeforeMount } from 'vue'
-import TabBar from './../../components/TabBar.vue';
+import TabBar from './../../components/TabBar';
 import { useDidShow, hideHomeButton } from '@tarojs/taro'
 
     // useDidShow(() => hideHomeButton())
