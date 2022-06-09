@@ -12,6 +12,7 @@
 - @prequest/miniprogram
 - pina - persist
 - 组件代替switch-tab
-- 
+- vue-dev-tools
+
 # todos
-- 开发工具的安装
+
